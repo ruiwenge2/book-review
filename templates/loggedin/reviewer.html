@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>{{title}}</title>
+    <link href="/static/style.css" rel="stylesheet">
+    <link href="/static/book.png" rel="icon">
+  </head>
+  <body>
+    <nav>
+      <a href="/">Home</a>
+      <a href="/books">Book Reviews</a>
+      <a href="/logout">Logout</a>
+    </nav>
+    <br><br><br>
+    <p style="font-size:20px">Posted by <a href="/user/{{reviewer}}">{{reviewer}}</a></p>
+    <div style="text-align:left; border:2px solid white; padding-left:20px;">
+    <h1>{{title}}</h1>
+    <h3>Author: {{author}}</h3>
+    <h3>Background information: {{details}}</h3>
+    </div><br><br>
+    <a href="/books/{{bookid}}/edit">Edit</a>
+  </body>
+</html>

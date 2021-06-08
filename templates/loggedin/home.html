@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Home</title>
+    <link href="/static/style.css" rel="stylesheet">
+    <link href="/static/book.png" rel="icon">
+  </head>
+  <body>
+    <nav>
+      <a href="/">Home</a>
+      <a href="/books">Book Reviews</a>
+      <a href="/logout">Logout</a>
+    </nav><br>
+    <h1>Welcome, {{username}}!</h1>
+    <h3 style="font-size:20px">Go to the <a href="/books">Book Reviews page</a> to find a book that you might be interested in. You can also <a href="/createreview">create a book review</a> yourself!</h3>
+    <h3 style="font-size:20px"><a href="/about" target="_blank">Click here</a> for more information.</h3><br>
+    <div style="border:2px solid white; width:30%; margin-left:35%; margin-right:35%;">
+      <br>
+      <h3>Here are some links:</h3>
+      <a href="/user/{{username}}">Your Profile Page</a><br><br>
+      <a href="/createreview">Create a book review</a>
+      <br><br><br>
+    </div>
+  </body>
+</html>

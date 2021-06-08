@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Search Results for "{{search}}"</title>
+    <link href="/static/style.css" rel="stylesheet">
+    <link href="/static/book.png" rel="icon">
+  </head>
+  <body>
+    <nav>
+      <a href="/">Home</a>
+      <a href="/books">Book Reviews</a>
+      <a href="/logout">Logout</a>
+    </nav>
+  <h1>Search Results for "{{search}}"</h1>
+  <iframe src="/searchbooks?search={{search}}" style="border:2px solid white; width:100%; height:625px;"></iframe>
+  </body>
+</html>
