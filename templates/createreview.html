@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Create Book Review</title>
+    <link href="/static/style.css" rel="stylesheet">
+    <link href="/static/loginsignup.css" rel="stylesheet">
+    <link href="/static/book.png" rel="icon">
+  </head>
+  <body>
+    <nav>
+      <a href="/">Home</a>
+      <a href="/books">Book Reviews</a>
+      <a href="/logout">Logout</a>
+    </nav>
+    <form action="/createreviewsubmit" method="post">
+      <h3>Enter the title of the book or series:</h3>
+      <input name="title" placeholder="Enter title" autocomplete="off" required>
+      <h3>Enter the author:</h3>
+      <input name="author" placeholder="Enter author" autocomplete="off" required>
+      <h3>Enter some background information:</h3>
+      <textarea name="details" placeholder="Enter background information"></textarea><br><br>
+      <input type="submit" value="Create Book Review">
+    </form>
+  </body>
+</html>

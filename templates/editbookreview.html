@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Edit {{title}}</title>
+    <link href="/static/style.css" rel="stylesheet">
+    <link href="/static/loginsignup.css" rel="stylesheet">
+    <link href="/static/book.png" rel="icon">
+  </head>
+  <body>
+    <nav>
+      <a href="/">Home</a>
+      <a href="/books">Book Reviews</a>
+      <a href="/logout">Logout</a>
+    </nav>
+    <form action="/books/{{bookid}}/editreviewsubmit" method="post">
+      <h3>Title of the book or series:</h3>
+      <input name="title" placeholder="Enter title" autocomplete="off" required value="{{title}}">
+      <h3>Author:</h3>
+      <input name="author" placeholder="Enter author" autocomplete="off" required value="{{author}}">
+      <h3>Background information:</h3>
+      <textarea name="details" placeholder="Enter background information">{{details}}</textarea><br><br>
+      <input type="submit" value="Edit Book Review">
+    </form>
+  </body>
+</html>

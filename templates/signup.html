@@ -1,0 +1,24 @@
+<DOCTYPE html>
+<html>
+  <head>
+    <title>Sign Up</title>
+    <link href="/static/style.css" rel="stylesheet">    <link href="/static/loginsignup.css" rel="stylesheet">
+    <link href="/static/book.png" rel="icon">
+  </head>
+  <body>
+    <nav>
+      <a href="/">Home</a>
+      <a href="/books">Book Reviews</a>
+      <a href="/login">Login</a>
+      <a href="/signup">Sign Up</a>
+    </nav>
+    <br><br><br>
+    <form action="/createaccount" method="post">
+      <h3>Username</h3><input name="newusername" placeholder="Enter username" required><br><br>
+      <h3>Password</h3><input type="password" name="newpassword" placeholder="Enter password" required><br><br><br>
+      <input type="submit" value="Sign Up">
+      <br><br><br>
+    </form>
+    <p>Already have an account? <a href="/login">Login</a></p>
+  </body>
+</html>
