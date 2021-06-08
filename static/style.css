@@ -1,1 +1,50 @@
+@import url(https://fonts.googleapis.com/css2?family=Roboto&display=swap);
 
+* {
+  outline:none;
+}
+body {
+  background:black;
+  text-align:center;
+  font-family:Roboto;
+  color:white;
+}
+nav {
+  width:50%;
+  /* height:50px; */
+  background:gray;
+  padding-top:10px;
+  padding-bottom:10px;
+  margin-left:25%;
+  margin-right:25%;
+  margin-bottom:20px;
+  border-radius:5px;
+}
+nav a {
+  width:100px;
+  /* border:2px solid black; */
+  color:white;
+  font-size:30px;
+  text-decoration:none;
+  border-radius:5px;
+  margin-right:10px;
+  padding:5px;
+  user-select:none;
+}
+nav a:hover {
+  background:black;
+  text-decoration:none;
+}
+nav a, nav a:visited {
+  color:white;
+}
+a, a:visited {
+  color:white;
+  font-size:20px;
+}
+a:hover, a:active {
+  text-decoration:none;
+}
+/* iframe {
+  height:1000px;
+} */
